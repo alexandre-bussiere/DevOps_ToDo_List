@@ -1,4 +1,16 @@
 services:
+
+  test:
+    image: todolist
+    build:
+      context: .
+    env_file:
+      - .env
+    command: >
+      sh -c "python -m unittest discover -s tests"
+    depends_on:
+      - todolist
+
   todolist:
     container_name: todolist
     image: todolist

@@ -23,6 +23,8 @@ Using `docker-compose` you can simple run:
     docker-compose build
     docker-compose up
 
+    docker-compose run --rm test
+
 And the application will run on http://localhost:8000/
 
 (It's serving the app using [gunicorn](http://gunicorn.org/) which you would

@@ -23,7 +23,7 @@ Using `docker-compose` you can simple run:
     docker-compose build
     docker-compose up
 
-    docker-compose run --rm test
+    docker-compose run test
 
 And the application will run on http://localhost:8000/
 
